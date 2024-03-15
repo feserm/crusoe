@@ -1,0 +1,18 @@
+subnet: private_subnet
+floating_ip: 129.70.51.240
+
+sshKey: mfeser
+
+instances:
+  - name: proxy
+    image: Ubuntu 22.04 LTS (2023-09-28)
+    type: de.NBI medium
+  - name: miappe-wizard
+    image: Ubuntu 22.04 LTS (2023-09-28)
+    type: de.NBI medium
+  - name: datahub
+    image: Ubuntu 22.04 LTS (2023-09-28)
+    type: de.NBI medium
+  - name: mira-ctrl
+    image: Ubuntu 22.04 LTS (2023-09-28)
+    type: de.NBI small
