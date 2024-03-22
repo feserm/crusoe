@@ -8,7 +8,7 @@ instances:
     image: Ubuntu 22.04 LTS (2023-09-28)
     type: de.NBI medium
 
-  - name: miappe-wizard
+  - name: miappe_wizard
     image: Ubuntu 22.04 LTS (2023-09-28)
     type: de.NBI medium
 
@@ -16,6 +16,6 @@ instances:
     image: Ubuntu 22.04 LTS (2023-09-28)
     type: de.NBI medium
     
-  - name: mira-ctrl
+  - name: mira_ctrl
     image: Ubuntu 22.04 LTS (2023-09-28)
     type: de.NBI small

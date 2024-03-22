@@ -22,3 +22,6 @@ wheels/
 *.egg
 MANIFEST
 
+# Project related files
+.ansible
+.vscode

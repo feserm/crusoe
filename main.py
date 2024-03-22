@@ -5,6 +5,8 @@ import logging
 from icecream import ic
 from commands.create import create
 
+LOG = logging.getLogger('crusoe')
+
 @click.group()
 @click.option('-c', '--config', default='config.yaml', help='Path to the configuration file')
 @click.option('-v', '--verbose', count=True, help='Verbosity level')
@@ -21,7 +23,7 @@ def start(ctx):
     """
     Start the infrastructure
     """
-    create(ctx.obj['config'])
+    create(ctx.obj['config'], LOG)
 
 @cli.command()
 def terminate():

@@ -1,0 +1,18 @@
+---
+- name: Install and configure Nginx reverse proxy
+  hosts: proxy
+  become: true
+  tasks:
+    - name: Import proxy setup tasks
+      ansible.builtin.import_tasks: 01_proxy_setup.yml
+- name: Install Docker
+  hosts: all
+  become: true
+  tasks:
+    - name: Import common setup tasks
+      ansible.builtin.import_tasks: 02_common_setup.yml
+# - name: Setup MIAPPE Wizard
+#   hosts: miappe_wizard
+#   become: true
+#   - name: Import MIAPPE Wizard tasks
+#     ansible.builtin.import_tasks: 03_miappe_wizard_setup.yml
